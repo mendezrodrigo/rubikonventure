@@ -1,2 +1,2 @@
 # rubikon-ventures
-Your Personal Ecosystem
+Personal Ecosystem
