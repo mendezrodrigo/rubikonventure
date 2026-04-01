@@ -29,7 +29,6 @@
     </header>
 
     <main>
-      <!-- IDENTITY -->
       <section id="identity-view" class="view active">
         <div class="hero-block">
           <p class="eyebrow">Rubikon Identity Layer</p>
@@ -86,9 +85,7 @@
               It is a decision surface for collaboration. The goal is not to display everything
               about a person. The goal is to display what matters before time is wasted.
             </p>
-
             <div class="mini-rule"></div>
-
             <p>
               A strong identity here is narrow, intentional, and current.
             </p>
@@ -96,7 +93,6 @@
         </div>
       </section>
 
-      <!-- CONNECTION MAP -->
       <section id="network-view" class="view">
         <div class="hero-block">
           <p class="eyebrow">Connection Map</p>
@@ -133,33 +129,47 @@
 
               <div class="orbital-grid orbital-grid-1"></div>
               <div class="orbital-grid orbital-grid-2"></div>
+              <div class="orbital-grid orbital-grid-3"></div>
+
+              <div class="second-ring second-ring-1"></div>
+              <div class="second-ring second-ring-2"></div>
+              <div class="second-ring second-ring-3"></div>
+              <div class="second-ring second-ring-4"></div>
+              <div class="second-ring second-ring-5"></div>
+              <div class="second-ring second-ring-6"></div>
 
               <div class="center-orb" id="center-orb">
                 <span>You</span>
               </div>
 
-              <button class="map-node node-1" data-id="1" data-name="Lina Hoffmann" data-role="Product Strategist" data-city="Berlin" data-building="A mentor matching layer for technical founders." data-culture="Systems-minded, clear, product-rigorous">
-                LH
+              <button class="map-node node-1" data-id="1" data-name="Lina Hoffmann" data-role="Product Strategist" data-city="Berlin" data-building="A mentor matching layer for technical founders." data-culture="Systems-minded, clear, product-rigorous" data-initials="LH">
+                <span class="node-icon">◖◗</span>
+                <span class="node-label">LH</span>
               </button>
 
-              <button class="map-node node-2" data-id="2" data-name="Marco Silva" data-role="Community Builder" data-city="Lisbon" data-building="A curated founder community for southern Europe." data-culture="Warm, kinetic, socially intelligent">
-                MS
+              <button class="map-node node-2" data-id="2" data-name="Marco Silva" data-role="Community Builder" data-city="Lisbon" data-building="A curated founder community for southern Europe." data-culture="Warm, kinetic, socially intelligent" data-initials="MS">
+                <span class="node-icon">◖◗</span>
+                <span class="node-label">MS</span>
               </button>
 
-              <button class="map-node node-3" data-id="3" data-name="Nina Patel" data-role="Research Collaborator" data-city="Munich" data-building="A mobility intelligence concept for cities." data-culture="Analytical, calm, structured">
-                NP
+              <button class="map-node node-3" data-id="3" data-name="Nina Patel" data-role="Research Collaborator" data-city="Munich" data-building="A mobility intelligence concept for cities." data-culture="Analytical, calm, structured" data-initials="NP">
+                <span class="node-icon">◖◗</span>
+                <span class="node-label">NP</span>
               </button>
 
-              <button class="map-node node-4" data-id="4" data-name="Adrian Costa" data-role="Designer" data-city="Barcelona" data-building="A design language for collaborative products." data-culture="Visual, conceptual, exacting">
-                AC
+              <button class="map-node node-4" data-id="4" data-name="Adrian Costa" data-role="Designer" data-city="Barcelona" data-building="A design language for collaborative products." data-culture="Visual, conceptual, exacting" data-initials="AC">
+                <span class="node-icon">◖◗</span>
+                <span class="node-label">AC</span>
               </button>
 
-              <button class="map-node node-5" data-id="5" data-name="Sofia Klein" data-role="Operations Lead" data-city="Amsterdam" data-building="A smoother system for startup program operations." data-culture="Reliable, operational, low-ego">
-                SK
+              <button class="map-node node-5" data-id="5" data-name="Sofia Klein" data-role="Operations Lead" data-city="Amsterdam" data-building="A smoother system for startup program operations." data-culture="Reliable, operational, low-ego" data-initials="SK">
+                <span class="node-icon">◖◗</span>
+                <span class="node-label">SK</span>
               </button>
 
-              <button class="map-node node-6" data-id="6" data-name="Jonas Meyer" data-role="Ecosystem Connector" data-city="Zurich" data-building="An ecosystem map for startup-to-corporate collaboration." data-culture="Connector-minded, strategic, long-term">
-                JM
+              <button class="map-node node-6" data-id="6" data-name="Jonas Meyer" data-role="Ecosystem Connector" data-city="Zurich" data-building="An ecosystem map for startup-to-corporate collaboration." data-culture="Connector-minded, strategic, long-term" data-initials="JM">
+                <span class="node-icon">◖◗</span>
+                <span class="node-label">JM</span>
               </button>
             </div>
           </article>
@@ -174,7 +184,6 @@
         </div>
       </section>
 
-      <!-- FLOWBOARD -->
       <section id="flowboard-view" class="view">
         <div class="hero-block">
           <p class="eyebrow">FlowBoard</p>
@@ -186,54 +195,128 @@
         <div class="flowboard-layout">
           <article class="flow-column">
             <div class="flow-column-head">
-              <h2>Active Signals</h2>
-              <p class="muted">What is worth acting on next.</p>
+              <h2>FlowBoard</h2>
+              <p class="muted">Search active themes, people, cities, and signals.</p>
             </div>
 
-            <div class="signal-card">
-              <p class="signal-type">Person</p>
-              <h3>Berlin-based founder looking for a product thinking partner</h3>
-              <p>
-                Strong match with startup ecosystems, narrative framing, and strategic product positioning.
-              </p>
-              <button class="ghost-action">Request intro</button>
+            <div class="search-shell">
+              <input
+                id="flow-search"
+                type="text"
+                placeholder="Search by city, keyword, person, agents, polymath, vibe coding..."
+              />
             </div>
 
-            <div class="signal-card">
-              <p class="signal-type">Idea</p>
-              <h3>Cross-border student network concept gaining traction</h3>
-              <p>
-                Direct thematic overlap with mobility, belonging, international communities, and systems thinking.
-              </p>
-              <button class="ghost-action">Join thread</button>
+            <div class="quick-tags" id="quick-tags">
+              <button class="quick-tag">Agents</button>
+              <button class="quick-tag">Agentic startups</button>
+              <button class="quick-tag">Generalists</button>
+              <button class="quick-tag">Polymaths</button>
+              <button class="quick-tag">Cross-cultural</button>
+              <button class="quick-tag">Transnational</button>
+              <button class="quick-tag">Vibe coding</button>
             </div>
 
-            <div class="signal-card">
-              <p class="signal-type">Request</p>
-              <h3>Innovation program needs community design support</h3>
-              <p>
-                Matches cultural alignment around high-agency collaboration and direct communication.
-              </p>
-              <button class="ghost-action">Offer help</button>
+            <div class="signals-list" id="signals-list">
+              <div class="signal-card" data-search="berlin founder product generalist startup ecosystems">
+                <p class="signal-type">Person</p>
+                <h3>Berlin-based founder looking for a product thinking partner</h3>
+                <p>
+                  Strong match with startup ecosystems, narrative framing, and strategic product positioning.
+                </p>
+                <button class="ghost-action">Request intro</button>
+              </div>
+
+              <div class="signal-card" data-search="agentic startups ai automation builders operators">
+                <p class="signal-type">Trend</p>
+                <h3>Early agentic startups are looking for generalist operators</h3>
+                <p>
+                  High signal around builders who can move between product, research, systems, and community.
+                </p>
+                <button class="ghost-action">Explore fit</button>
+              </div>
+
+              <div class="signal-card" data-search="polymaths interdisciplinary talent transnational cross-cultural">
+                <p class="signal-type">People</p>
+                <h3>Cross-cultural polymaths are clustering around interdisciplinary startup work</h3>
+                <p>
+                  A strong fit for people who think across strategy, narrative, product, and ecosystems.
+                </p>
+                <button class="ghost-action">See cluster</button>
+              </div>
+
+              <div class="signal-card" data-search="vibe coding design interface prototyping creative coding">
+                <p class="signal-type">Idea</p>
+                <h3>Vibe coding and interface prototyping are becoming a serious collaboration layer</h3>
+                <p>
+                  Designers, storytellers, and technical generalists are converging around faster concept execution.
+                </p>
+                <button class="ghost-action">Join thread</button>
+              </div>
+
+              <div class="signal-card" data-search="lisbon community founder southern europe transnational">
+                <p class="signal-type">Community</p>
+                <h3>Lisbon founder circles are opening more to transnational collaborators</h3>
+                <p>
+                  There is growing openness toward cross-border operators, community builders, and cultural translators.
+                </p>
+                <button class="ghost-action">Open path</button>
+              </div>
+
+              <div class="signal-card" data-search="munich requests systems research mobility">
+                <p class="signal-type">Request</p>
+                <h3>Mobility and systems research groups need sharper narrative builders</h3>
+                <p>
+                  Good fit for someone who can translate technical work into strategic clarity and collaboration.
+                </p>
+                <button class="ghost-action">Offer help</button>
+              </div>
             </div>
           </article>
 
           <aside class="flow-side">
-            <p class="eyebrow">What FlowBoard means</p>
-            <h3>Not a feed. A routing surface.</h3>
-            <p>
-              FlowBoard should show what is moving through your network and why it is relevant now.
-            </p>
-            <div class="mini-rule"></div>
-            <p>
-              Later, this becomes the layer that powers pings, introductions, and opportunity matching.
-            </p>
+            <div class="pipeline-block">
+              <p class="eyebrow">Opportunity Pipeline</p>
+              <h3>From signal to action.</h3>
+              <p>
+                The pipeline is where filtered relevance turns into a next step: intros, pings, collaborations, or saved paths.
+              </p>
+            </div>
+
+            <div class="pipeline-list">
+              <div class="pipeline-card">
+                <p class="pipeline-type">Warm intro</p>
+                <h4>Marco Silva → Lisbon founder community</h4>
+                <p>Potential path into southern Europe startup circles through community-building context.</p>
+              </div>
+
+              <div class="pipeline-card">
+                <p class="pipeline-type">Potential match</p>
+                <h4>Generalist operator roles in agentic startups</h4>
+                <p>High overlap with cross-functional, strategic, and fast-moving startup work.</p>
+              </div>
+
+              <div class="pipeline-card">
+                <p class="pipeline-type">Saved direction</p>
+                <h4>Cross-cultural builders working across education, AI, and systems</h4>
+                <p>A strong long-term cluster worth tracking and revisiting.</p>
+              </div>
+
+              <div class="pipeline-card">
+                <p class="pipeline-type">Open request</p>
+                <h4>Narrative support for mobility research collaborators</h4>
+                <p>One of the clearest places where your profile can become immediately useful.</p>
+              </div>
+            </div>
           </aside>
         </div>
       </section>
     </main>
   </div>
 
+  <script src="script.js"></script>
+</body>
+</html>
   <script src="script.js"></script>
 </body>
 </html>
