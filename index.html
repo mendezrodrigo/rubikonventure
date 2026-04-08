@@ -15,68 +15,125 @@
   <div class="site-shell">
     <header class="site-header">
       <div class="brand-block">
-        <div class="brand-mark">Rubikon</div>
+        <div class="brand-row">
+          <div class="brand-logo" aria-hidden="true">
+            <span class="brand-logo-outer"></span>
+            <span class="brand-logo-inner"></span>
+          </div>
+          <div class="brand-mark">Rubikon</div>
+        </div>
         <p class="brand-sub">
           A network system for people, skills, ideas, and collaborators.
         </p>
       </div>
 
-      <nav class="top-nav">
-        <button class="nav-button active" data-view="identity">Identity</button>
-        <button class="nav-button" data-view="network">Connection Map</button>
-        <button class="nav-button" data-view="flowboard">FlowBoard</button>
-      </nav>
+      <div class="header-actions">
+        <nav class="top-nav">
+          <button class="nav-button active" data-view="identity">Identity</button>
+          <button class="nav-button" data-view="network">Connection Map</button>
+          <button class="nav-button" data-view="flowboard">FlowBoard</button>
+        </nav>
+
+        <div class="auth-actions">
+          <button class="auth-button auth-button-secondary">Log in</button>
+          <button class="auth-button auth-button-primary">Sign up</button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section id="identity-view" class="view active">
         <div class="hero-block">
           <p class="eyebrow">Rubikon Identity Layer</p>
-          <h1>
-            Know what a person is building, how they collaborate, and what they will not compromise on.
+          <h1 class="identity-hero-title">
+            <span class="line-main">Know what a person is <span class="accent-word">building</span>.</span>
+            <span class="line-sub">How they <span class="accent-word">collaborate</span>,</span>
+            <span class="line-sub">what they will not <span class="accent-word">compromise</span>.</span>
           </h1>
         </div>
 
         <div class="identity-layout">
-          <article class="identity-card">
-            <div class="identity-head">
-              <div class="identity-avatar">RM</div>
-              <div>
-                <h2>Rodrigo Mendez Carrillo</h2>
-                <p class="muted">@rodrigomendez · Nuremberg</p>
+          <div class="identity-cards-grid">
+            <article class="identity-card">
+              <div class="identity-head">
+                <div class="identity-avatar">RM</div>
+                <div>
+                  <h2>Rodrigo Mendez Carrillo</h2>
+                  <p class="muted">@rodrigomendez · Nuremberg</p>
+                </div>
               </div>
-            </div>
 
-            <section class="identity-panel identity-panel-building">
-              <p class="section-label">What they are building</p>
-              <h3>Rubikon</h3>
-              <p>
-                A network system for people, skills, ideas, and collaborators to move through digital ecosystems with more clarity, relevance, and momentum.
-              </p>
-            </section>
+              <section class="identity-panel identity-panel-building">
+                <p class="section-label">What they are building</p>
+                <h3>Rubikon</h3>
+                <p>
+                  A network system for people, skills, ideas, and collaborators to move through digital ecosystems with more clarity, relevance, and momentum.
+                </p>
+              </section>
 
-            <section class="identity-panel identity-panel-culture">
-              <p class="section-label">Culture</p>
-              <div class="chip-row">
-                <span class="chip">High-agency</span>
-                <span class="chip">Cross-cultural</span>
-                <span class="chip">Direct but thoughtful</span>
-                <span class="chip">Creative seriousness</span>
-                <span class="chip">Human-centered ambition</span>
+              <section class="identity-panel identity-panel-culture">
+                <p class="section-label">Culture</p>
+                <div class="chip-row">
+                  <span class="chip">High-agency</span>
+                  <span class="chip">Cross-cultural</span>
+                  <span class="chip">Direct but thoughtful</span>
+                  <span class="chip">Creative seriousness</span>
+                  <span class="chip">Human-centered ambition</span>
+                </div>
+              </section>
+
+              <section class="identity-panel identity-panel-nonnegotiables">
+                <p class="section-label">Non-negotiables</p>
+                <ul class="nonnegotiables-list">
+                  <li>No ghosting</li>
+                  <li>Clear communication</li>
+                  <li>Async-friendly first</li>
+                  <li>Reliability over hype</li>
+                  <li>Mutual respect in collaboration</li>
+                </ul>
+              </section>
+            </article>
+
+            <article class="identity-card">
+              <div class="identity-head">
+                <div class="identity-avatar alt-avatar">AC</div>
+                <div>
+                  <h2>Amira Chen</h2>
+                  <p class="muted">@amirachen · Berlin</p>
+                </div>
               </div>
-            </section>
 
-            <section class="identity-panel identity-panel-nonnegotiables">
-              <p class="section-label">Non-negotiables</p>
-              <ul class="nonnegotiables-list">
-                <li>No ghosting</li>
-                <li>Clear communication</li>
-                <li>Async-friendly first</li>
-                <li>Reliability over hype</li>
-                <li>Mutual respect in collaboration</li>
-              </ul>
-            </section>
-          </article>
+              <section class="identity-panel identity-panel-building">
+                <p class="section-label">What they are building</p>
+                <h3>Due Signal</h3>
+                <p>
+                  An AI-native diligence layer for technical founders, early-stage operators, and cross-functional collaborators who need sharper trust signals before building together.
+                </p>
+              </section>
+
+              <section class="identity-panel identity-panel-culture">
+                <p class="section-label">Culture</p>
+                <div class="chip-row">
+                  <span class="chip">Structured curiosity</span>
+                  <span class="chip">Fast iteration</span>
+                  <span class="chip">Low-ego rigor</span>
+                  <span class="chip">Security-aware</span>
+                  <span class="chip">Evidence-led decisions</span>
+                </div>
+              </section>
+
+              <section class="identity-panel identity-panel-nonnegotiables">
+                <p class="section-label">Non-negotiables</p>
+                <ul class="nonnegotiables-list">
+                  <li>No inflated claims</li>
+                  <li>No vague ownership</li>
+                  <li>No avoidable security risk</li>
+                  <li>No performative collaboration</li>
+                  <li>Respect for technical depth</li>
+                </ul>
+              </section>
+            </article>
+          </div>
 
           <aside class="side-note">
             <p class="eyebrow">Essential, not performative</p>
@@ -91,6 +148,8 @@
             </p>
           </aside>
         </div>
+
+        <button class="feedback-fab" id="feedback-button">Request feedback</button>
       </section>
 
       <section id="network-view" class="view">
@@ -142,32 +201,32 @@
                 <span>You</span>
               </div>
 
-              <button class="map-node node-1" data-id="1" data-name="Lina Hoffmann" data-role="Product Strategist" data-city="Berlin" data-building="A mentor matching layer for technical founders." data-culture="Systems-minded, clear, product-rigorous" data-initials="LH">
+              <button class="map-node node-1" data-id="1" data-name="Lina Hoffmann" data-role="Product Strategist" data-city="Berlin" data-building="A mentor matching layer for technical founders." data-culture="Systems-minded, clear, product-rigorous" data-initials="LH" data-pipeline-title="Product architecture path" data-pipeline-summary="Lina is strongest as a direct collaboration path for product framing and founder matching logic." data-pipeline-1="Refine profile and matching logic" data-pipeline-2="Pressure-test mentor onboarding flow" data-pipeline-3="Map decision criteria for high-fit intros">
                 <span class="node-icon">◖◗</span>
                 <span class="node-label">LH</span>
               </button>
 
-              <button class="map-node node-2" data-id="2" data-name="Marco Silva" data-role="Community Builder" data-city="Lisbon" data-building="A curated founder community for southern Europe." data-culture="Warm, kinetic, socially intelligent" data-initials="MS">
+              <button class="map-node node-2" data-id="2" data-name="Marco Silva" data-role="Community Builder" data-city="Lisbon" data-building="A curated founder community for southern Europe." data-culture="Warm, kinetic, socially intelligent" data-initials="MS" data-pipeline-title="Community access path" data-pipeline-summary="Marco is strongest as a warm-intro bridge into founder communities and transnational collaboration circles." data-pipeline-1="Open Lisbon founder circle access" data-pipeline-2="Test community-based onboarding" data-pipeline-3="Use him as a regional cluster anchor">
                 <span class="node-icon">◖◗</span>
                 <span class="node-label">MS</span>
               </button>
 
-              <button class="map-node node-3" data-id="3" data-name="Nina Patel" data-role="Research Collaborator" data-city="Munich" data-building="A mobility intelligence concept for cities." data-culture="Analytical, calm, structured" data-initials="NP">
+              <button class="map-node node-3" data-id="3" data-name="Nina Patel" data-role="Research Collaborator" data-city="Munich" data-building="A mobility intelligence concept for cities." data-culture="Analytical, calm, structured" data-initials="NP" data-pipeline-title="Research translation path" data-pipeline-summary="Nina is strongest where structured research needs narrative clarity and systems-level interpretation." data-pipeline-1="Translate research into clearer strategic framing" data-pipeline-2="Support systems narrative for mobility work" data-pipeline-3="Explore joint concept notes or workshops">
                 <span class="node-icon">◖◗</span>
                 <span class="node-label">NP</span>
               </button>
 
-              <button class="map-node node-4" data-id="4" data-name="Adrian Costa" data-role="Designer" data-city="Barcelona" data-building="A design language for collaborative products." data-culture="Visual, conceptual, exacting" data-initials="AC">
+              <button class="map-node node-4" data-id="4" data-name="Adrian Costa" data-role="Designer" data-city="Barcelona" data-building="A design language for collaborative products." data-culture="Visual, conceptual, exacting" data-initials="AC" data-pipeline-title="Design language path" data-pipeline-summary="Adrian is strongest as a design partner for interface clarity, visual systems, and product expression." data-pipeline-1="Sharpen visual identity system" data-pipeline-2="Prototype cleaner interaction patterns" data-pipeline-3="Improve product cohesion across views">
                 <span class="node-icon">◖◗</span>
                 <span class="node-label">AC</span>
               </button>
 
-              <button class="map-node node-5" data-id="5" data-name="Sofia Klein" data-role="Operations Lead" data-city="Amsterdam" data-building="A smoother system for startup program operations." data-culture="Reliable, operational, low-ego" data-initials="SK">
+              <button class="map-node node-5" data-id="5" data-name="Sofia Klein" data-role="Operations Lead" data-city="Amsterdam" data-building="A smoother system for startup program operations." data-culture="Reliable, operational, low-ego" data-initials="SK" data-pipeline-title="Execution reliability path" data-pipeline-summary="Sofia is strongest as an operations-minded collaborator who can stabilize follow-through and workflow quality." data-pipeline-1="Strengthen follow-up and response systems" data-pipeline-2="Improve collaboration reliability logic" data-pipeline-3="Design cleaner execution handoffs">
                 <span class="node-icon">◖◗</span>
                 <span class="node-label">SK</span>
               </button>
 
-              <button class="map-node node-6" data-id="6" data-name="Jonas Meyer" data-role="Ecosystem Connector" data-city="Zurich" data-building="An ecosystem map for startup-to-corporate collaboration." data-culture="Connector-minded, strategic, long-term" data-initials="JM">
+              <button class="map-node node-6" data-id="6" data-name="Jonas Meyer" data-role="Ecosystem Connector" data-city="Zurich" data-building="An ecosystem map for startup-to-corporate collaboration." data-culture="Connector-minded, strategic, long-term" data-initials="JM" data-pipeline-title="Ecosystem leverage path" data-pipeline-summary="Jonas is strongest as a long-range strategic connector across ecosystems, institutions, and corporate-founder interfaces." data-pipeline-1="Surface institutional collaboration paths" data-pipeline-2="Map startup-to-corporate bridge opportunities" data-pipeline-3="Track him as a long-term leverage node">
                 <span class="node-icon">◖◗</span>
                 <span class="node-label">JM</span>
               </button>
@@ -203,22 +262,23 @@
               <input
                 id="flow-search"
                 type="text"
-                placeholder="Search by city, keyword, person, agents, polymath, vibe coding..."
+                placeholder="Search by city, keyword, person, data scientists, cybersecurity, generalists..."
               />
             </div>
 
             <div class="quick-tags" id="quick-tags">
-              <button class="quick-tag">Agents</button>
-              <button class="quick-tag">Agentic startups</button>
               <button class="quick-tag">Generalists</button>
               <button class="quick-tag">Polymaths</button>
+              <button class="quick-tag">Vibe coding</button>
+              <button class="quick-tag">Data scientists</button>
+              <button class="quick-tag">Cybersecurity</button>
               <button class="quick-tag">Cross-cultural</button>
               <button class="quick-tag">Transnational</button>
-              <button class="quick-tag">Vibe coding</button>
+              <button class="quick-tag">Agentic startups</button>
             </div>
 
             <div class="signals-list" id="signals-list">
-              <div class="signal-card" data-search="berlin founder product generalist startup ecosystems">
+              <div class="signal-card" data-search="berlin founder product generalists startup ecosystems">
                 <p class="signal-type">Person</p>
                 <h3>Berlin-based founder looking for a product thinking partner</h3>
                 <p>
@@ -227,7 +287,7 @@
                 <button class="ghost-action">Request intro</button>
               </div>
 
-              <div class="signal-card" data-search="agentic startups ai automation builders operators">
+              <div class="signal-card" data-search="agentic startups ai automation builders operators generalists polymaths">
                 <p class="signal-type">Trend</p>
                 <h3>Early agentic startups are looking for generalist operators</h3>
                 <p>
@@ -254,7 +314,7 @@
                 <button class="ghost-action">Join thread</button>
               </div>
 
-              <div class="signal-card" data-search="lisbon community founder southern europe transnational">
+              <div class="signal-card" data-search="lisbon community founder southern europe transnational cross-cultural">
                 <p class="signal-type">Community</p>
                 <h3>Lisbon founder circles are opening more to transnational collaborators</h3>
                 <p>
@@ -263,13 +323,31 @@
                 <button class="ghost-action">Open path</button>
               </div>
 
-              <div class="signal-card" data-search="munich requests systems research mobility">
+              <div class="signal-card" data-search="munich requests systems research mobility cross-cultural narrative">
                 <p class="signal-type">Request</p>
                 <h3>Mobility and systems research groups need sharper narrative builders</h3>
                 <p>
                   Good fit for someone who can translate technical work into strategic clarity and collaboration.
                 </p>
                 <button class="ghost-action">Offer help</button>
+              </div>
+
+              <div class="signal-card" data-search="data scientists signal ranking matching trust graphs analytics">
+                <p class="signal-type">Capability</p>
+                <h3>Data scientists are becoming critical for signal ranking and trust-layer design</h3>
+                <p>
+                  Strong relevance for products that need recommendation logic, fit scoring, and collaboration graphs.
+                </p>
+                <button class="ghost-action">Map fit</button>
+              </div>
+
+              <div class="signal-card" data-search="cybersecurity trust access identity systems privacy secure collaboration">
+                <p class="signal-type">Capability</p>
+                <h3>Cybersecurity talent is increasingly shaping trust-first collaboration products</h3>
+                <p>
+                  Identity, permissions, privacy, and secure access are no longer side issues. They define product credibility.
+                </p>
+                <button class="ghost-action">Find experts</button>
               </div>
             </div>
           </article>
@@ -297,15 +375,15 @@
               </div>
 
               <div class="pipeline-card">
-                <p class="pipeline-type">Saved direction</p>
-                <h4>Cross-cultural builders working across education, AI, and systems</h4>
-                <p>A strong long-term cluster worth tracking and revisiting.</p>
+                <p class="pipeline-type">Capability cluster</p>
+                <h4>Data scientists for ranking, fit, and trust signals</h4>
+                <p>Useful for matching logic, collaboration mapping, and more intelligent opportunity sorting.</p>
               </div>
 
               <div class="pipeline-card">
                 <p class="pipeline-type">Open request</p>
-                <h4>Narrative support for mobility research collaborators</h4>
-                <p>One of the clearest places where your profile can become immediately useful.</p>
+                <h4>Cybersecurity support for identity-first systems</h4>
+                <p>One of the clearest places where product credibility and technical trust can be improved fast.</p>
               </div>
             </div>
           </aside>
@@ -314,9 +392,6 @@
     </main>
   </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
   <script src="script.js"></script>
 </body>
 </html>
